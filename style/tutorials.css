@@ -1,0 +1,62 @@
+/* رسالة الترحيب (Hero Message) */
+.hero-message {
+    margin-top: 90px; /* مسافة تحت الشريط الثابت */
+    text-align: center;
+    background: linear-gradient(90deg, #8B0000, #001f3f);
+    padding: 60px 20px;
+    border-bottom: 2px solid #444;
+}
+
+.hero-message h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.hero-message p {
+    font-size: 20px;
+    color: #ddd;
+}
+
+/* قسم الفيديوهات */
+.tutorials-section {
+    width: 90%;
+    margin: 30px auto 50px auto;
+}
+
+.tutorials-section h2 {
+    font-size: 32px;
+    margin: 40px 0 20px;
+    text-shadow: 2px 2px 5px #8B0000;
+    border-left: 5px solid #8B0000;
+    padding-left: 15px;
+}
+
+/* شبكة الفيديوهات (Grid) */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* فيديوهين في كل صف */
+    gap: 25px;
+}
+
+/* استجابة الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .video-grid {
+        grid-template-columns: 1fr; /* فيديو واحد في الصف للشاشات الصغيرة */
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    border: 2px solid #222;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+
+iframe:hover {
+    transform: scale(1.02);
+    border-color: #8B0000;
+}

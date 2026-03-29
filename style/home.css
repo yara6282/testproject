@@ -1,0 +1,87 @@
+/* السلايدر */
+.slider {
+    width: 100%;
+    height: 400px;
+    margin-top: 70px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 1s ease;
+}
+
+.slides a {
+    flex: 0 0 100%;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* قسم الشوب */
+.shop-preview {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.shop-preview h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #8B0000;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: #222;
+    border-radius: 15px;
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 0 10px black;
+}
+
+.product-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.product-card p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #ddd;
+}
+
+.product-card button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.product-card button:hover {
+    background-color: #666;
+}
